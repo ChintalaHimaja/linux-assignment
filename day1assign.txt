@@ -1,0 +1,183 @@
+TRY
+
+1. 
+   cd ../
+   cd home
+   mkdir test
+   ls -l
+
+2.  
+     cat >employeelist
+employee list
+list 1
+list 2
+list 3
+list 4
+list 5
+^C
+user3@TrainingServer:~$ cat employeelist
+employee list
+list 1
+list 2
+list 3
+list 4
+list 5
+  (b)    cat >skillset
+         cat skillset
+
+3  
+  a)  user3@TrainingServer:~$ ln -s skillset slink
+      user3@TrainingServer:~$ ls
+  b)  user3@TrainingServer:~$ rm skillset
+user3@TrainingServer:~$ ls
+user3@TrainingServer:~$ cat slink
+cat: slink: No such file or directory
+   c) difference between symbolic and hard link is a symbolic link is the slink which is already exists and the hardlink is a
+mirror of the original link.
+ 4  
+     ls -l
+     chmod u+x f2
+     user3@TrainingServer:~$ cd ../
+user3@TrainingServer:/home$ cd user4
+user3@TrainingServer:/home/user4$ ls -l
+user3@TrainingServer:/home/user4$ cat file10
+user3@TrainingServer:/home/user4$ cat >>file10
+
+5
+  user3@TrainingServer:/$ sudo chgrp user4 file2
+
+
+6   
+   user3@TrainingServer:/home/user4$ chmod o+x file10
+
+7 
+   user3@TrainingServer:~$ chmod +rwx f2
+
+9  
+   user3@TrainingServer:~$ sudo chown user4 f2
+
+
+47th SLIDE
+1)
+   user3@TrainingServer:~$ cat >f1
+
+    user3@TrainingServer:~$ cat f1
+
+2)
+   user3@TrainingServer:~$ cat >>f1
+
+   user3@TrainingServer:~$ cat f1
+
+3) 
+   user3@TrainingServer:~$ cat >>f2
+
+   user3@TrainingServer:~$ cat f2
+
+4)
+   user3@TrainingServer:~$ cat f1 f2 >f3
+   user3@TrainingServer:~$ cat f3
+
+5)
+  user3@TrainingServer:~$ cat f1 f2
+
+6)
+  user3@TrainingServer:~$ cat f1 f2 >f3
+ user3@TrainingServer:~$ cat f3
+
+7) 
+   user3@TrainingServer:~$ cat f1 f2 f3 file4 file7
+
+8)
+   user3@TrainingServer:~$ ls f2 f3 f9
+   user3@TrainingServer:~$ ls f2 f3 f9 2>errlog
+   user3@TrainingServer:~$ cat errlog
+
+9)
+   user3@TrainingServer:~$ cat f1 f2 f3 f4 f5 >file10
+   user3@TrainingServer:~$ cat file10
+
+55 slide
+
+1)
+   user3@TrainingServer:~$ tail +10 file10 | head -16
+
+2)
+   user3@TrainingServer:~$ tail +10 file10|head -1
+
+3)
+   
+   find . -type -ctime -1 -ls
+
+4)
+  ls -lsr
+
+5)
+  grep -c ".*" File10
+
+6)
+  find . -iname "*" -mtime +3 -exec cat {} \;
+
+slide 61:
+
+1)
+
+   grep "A" employee list
+
+2) 
+   grep ^The file
+
+3)
+  grep "\.$" file
+
+4)
+  grep "^.a\|b\|c" File10
+
+5)
+  grep  "def\|deef\|deeeef" File10
+
+6)
+  grep -v [0-9] File10
+
+7)
+  grep -n "^$" File10
+
+9)
+   ls -d */
+
+slide 64:
+
+2)
+
+    ls | sort -r
+
+3)
+
+   ls -li | sort -n
+
+4)
+
+   ls -lr | sort -k 3
+   ls -lr | sort -k 4
+
+5)
+   ls -laS >sortedfile
+   cat sortedfile
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

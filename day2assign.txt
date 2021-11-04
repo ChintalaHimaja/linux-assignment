@@ -1,0 +1,75 @@
+slide 94:
+
+1)
+   command: vi calci [A editor is created with name calci]
+press: i [To insert data]
+type: The basic calculator, bc, can do calculaƟons to any precision that
+you specify.
+Therefore, if you know how to calculate pi and want to know its value to 20,
+50, or 200 places, for example, use bc.
+This tool can add, subtract, mulƟply, divide, and raise a number to a power.
+It can take square roots, compute sines and cosines of angles, calculate
+exponenƟals and logarithms, and handle arctangents and Bessel funcƟons.
+
+2)
+
+   press: home buƩon[To move to the start of first line]
+   press: O [Cap O- Opens a new line above the cursor ]
+
+3)
+
+   press: ‘:’ [To enter into Last line mode]
+   command: /bc
+   press: n [To navigate through and view the searched results]
+
+6)
+   In command mode, To delete a word, posiƟon the cursor at the beginning of the word and type dw
+   command: dw
+
+7)
+     In last line mode
+     command: 2s/c/C/g
+
+8)
+    In last line mode,
+    command: 1,4s/ /\t/g
+
+9)
+    In last line mode,
+    command: 1,4s/ /\t/g
+10)
+    In last line mode,
+ command: w bc_v2 [saves the file with given name]
+
+116 slide
+
+ command: sleep 100&
+write down pid
+ps -l
+write pid and ppid then logoff and login again
+ps -l
+then observe that pid and ppid will be not there
+
+4)
+    sleep 5s
+    echo "hello"
+
+119 slide:
+
+1)
+   echo "happy birthday" | at now +1 day
+
+121 slide:
+
+       Try the commands done with at using crontab
+	crontab (to schedule job)
+	* * * * * >f10 (scheduled job which will create f1o file every minute)
+	crontab -l	(to check previous scheduled job)
+	at now +1 minute	(schedule job)
+	sleep 100&		(scheduled job)
+	at -l			(to see scheduled job)
+	at -r jobno(46)		(remove job)
+	crontab -r		(remove job
+
+
+   
